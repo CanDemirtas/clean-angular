@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChildren, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'clean-angular';
-  showFiller = false;
+  toggleSidebar = false;
+
+  toggle() {
+    this.toggleSidebar = !this.toggleSidebar
+  }
 
 }

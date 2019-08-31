@@ -43,10 +43,18 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import { HomeComponent } from './pages/home/home.component';
+import { SidebarComponent } from './layout-component/sidebar/sidebar.component';
+import { ContentContainerComponent } from './layout-component/content-container/content-container.component';
+import { MainContainerComponent } from './layout-component/main-container/main-container.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SidebarComponent,
+    ContentContainerComponent,
+    MainContainerComponent
   ],
   imports: [
     // Material
